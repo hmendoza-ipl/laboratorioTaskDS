@@ -1,0 +1,49 @@
+# ========================
+# Entornos Virtuales
+# ========================
+venv/
+env/
+ENV/
+.venv/
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ========================
+# Django
+# ========================
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# ========================
+# Archivos Estáticos y Media
+# ========================
+media/
+staticfiles/
+
+# ========================
+# Secretos y Variables de Entorno
+# ========================
+.env
+.env.local
+
+# ========================
+# Editores de Código (IDE)
+# ========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ========================
+# Sistemas Operativos
+# ========================
+.DS_Store
+Thumbs.db

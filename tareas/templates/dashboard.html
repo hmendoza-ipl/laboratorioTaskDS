@@ -1,0 +1,13 @@
+<h2>Bienvenido a TaskFlow, {{ usuario.username }}</h2>
+
+{% if request.user.groups.all.0.name == 'Admin' %}
+    <p> Tienes permisos de administrador.</p>
+{% else %}
+    <p> Eres un miembro. Aquí veras tus tareas asignadas.</p>
+{% endif %}
+
+<form method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+    <button type="submit">Cerrar Sesión</button>
+</form>
+
